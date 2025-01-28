@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    background-color: #2b2b2b;
+}
+
+.container {
+    padding: 30px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container img {
+    border-radius: 10px;
+}
+
+.text1 {
+    width: 600px;
+    text-align: justify;
+    color: #fff;
+}
+
+.text1 h1 {
+    font-weight: 400;
+}
+
+.text1 p {
+    font-weight: 200;
+}
+
+.container-2 {
+    padding: 30px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}
+
+.text2 {
+    width: 500px;
+    text-align: justify;
+}
+
+.text2 h1 {
+    font-weight: 500;
+}
+
+.text2 p {
+    font-weight: 400;
+}
+
+.container-3 {
+    padding: 30px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text3 {
+    width: 500px;
+    text-align: justify;
+    color: #fff;
+}
+
+.text3 h1 {
+    font-weight: 400;
+}
+
+.text3 p {
+    font-weight: 200;
+}

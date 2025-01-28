@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="stress.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BalanceBuddy</title>
+</head>
+<body>
+    <div class="navbar">
+        <img width="100px" src="img/logo.png" alt="" class="logo">
+        <div class="links">
+            <a href="index.html" class="active">Home</a>
+            <a href="calendar.html">Calendar</a>
+            <a href="#">Stress Releaser</a>
+            <a href="notes.html">Notes</a>
+            <a href="about.html">About Us</a>
+        </div>
+    </div>
+    <div class="container-box">
+        <div class="box">
+            <img width="398.5px" height="200px" src="img/focus.png" alt="" class="image-box">
+            <p class="title-box">Focus Frequencies</p>
+            <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid rem iure quas sit consequatur pariatur enim iste est illo. Fugiat molestias aliquid excepturi vero natus, totam distinctio dolores. Tenetur, voluptates.</p>
+            <button class="goto-btn">Access Focus Frequencies</button>
+        </div>
+        <div class="box">
+            <img width="398.5px" height="200px" src="img/meditation.png" alt="" class="image-box">
+            <p class="title-box">Meditation</p>
+            <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid rem iure quas sit consequatur pariatur enim iste est illo. Fugiat molestias aliquid excepturi vero natus, totam distinctio dolores. Tenetur, voluptates.</p>
+            <button class="goto-btn">Access Meditation</button>
+        </div>
+        <div class="box">
+            <img width="398.5px" src="img/relax.png" alt="" class="image-box">
+            <p class="title-box">Breathing Exercises</p>
+            <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid rem iure quas sit consequatur pariatur enim iste est illo. Fugiat molestias aliquid excepturi vero natus, totam distinctio dolores. Tenetur, voluptates.</p>
+            <button class="goto-btn">Access Breathing Exercises</button>
+        </div>
+        <div class="box">
+            <img width="398.5px" src="img/audiobook.png" alt="" class="image-box">
+            <p class="title-box">Audiobooks</p>
+            <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid rem iure quas sit consequatur pariatur enim iste est illo. Fugiat molestias aliquid excepturi vero natus, totam distinctio dolores. Tenetur, voluptates.</p>
+            <button class="goto-btn">Access Audiobooks</button>
+        </div>
+    </div>
+    <div class="mood-tracker">
+        <h1>Mood Tracker</h1>
+        <p>How are you feeling today?</p>
+        <div class="moods">
+            <button class="mood-button happy" onclick="saveMood('Happy')"><i style="font-size: 25px;" class="fa-regular fa-face-smile"></i></button>
+            <button class="mood-button neutral" onclick="saveMood('Neutral')"><i style="font-size: 25px;"class="fa-regular fa-face-meh"></i></button>
+            <button class="mood-button sad" onclick="saveMood('Sad')"><i style="font-size: 25px;" class="fa-regular fa-face-frown-open"></i></button>
+        </div>
+        <h2>Your Mood Log</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Mood</th>
+                </tr>
+            </thead>
+            <tbody id="mood-log">
+
+            </tbody>
+        </table>
+    </div>
+    <script src="mood-tracker.js"></script>
+    <script src="https://cdn.landbot.io/landbot-widget/landbot-widget-1.0.0.js"></script>
+</body>
+</html>

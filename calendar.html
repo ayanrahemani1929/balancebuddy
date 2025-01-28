@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="calendar.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BalanceBuddy</title>
+</head>
+<body>
+    <div class="bg-box"></div>
+    <div class="navbar">
+        <img width="100px" src="img/logo.png" alt="" class="logo">
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="#">Calendar</a>
+            <a href="stress.html">Stress Releaser</a>
+            <a href="notes.html">Notes</a>
+            <a href="about.html">About Us</a>
+        </div>
+    </div>
+    <div id="calendar"></div>
+    <div id="external-events">
+        <p>Options:</p>
+        <div class="fc-event" data-event='{ "title": "New Event" }'>New Event</div>
+        <button id="discard-all">Discard All Events</button>  
+    </div>    
+    <h2 style="color: #fff; padding-left: 20px;">All Events</h2>
+    <table id="events-table" style="margin:auto; width: 90%; margin-top: 20px; border-collapse: collapse; margin-bottom: 50px;">
+    <thead>
+        <tr>
+        <th>Event Title</th>
+        <th>Start Date & Time</th>
+        <th>End Date & Time</th>
+        </tr>
+    </thead>
+    <tbody id="events-table-body">
+        <!-- Event rows will be dynamically added here -->
+    </tbody>
+    </table>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js"></script>
+    <script src="calendar.js"></script>
+</body>
+</html>

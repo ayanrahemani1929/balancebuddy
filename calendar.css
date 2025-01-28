@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background-color: #2b2828;
+}
+
+#external-events {
+    margin: 30px;
+    width: 300px;
+    padding: 10px;
+    background: #f8f9fa;
+    border: 1px solid #ddd;
+}
+
+.fc-event {
+    border-radius: 5px;
+    margin: 10px 10px;
+    padding: 8px 15px;
+    background-color: #3788d8;
+    color: #fff;
+    cursor: pointer;
+}
+  
+#discard-all {
+    padding: 10px 20px;
+    margin: 10px 10px;
+    background-color: #dc3545; /* Red background */
+    color: white; /* White text */
+    font-size: 16px;
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+#discard-all:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+#discard-all:active {
+    background-color: #a71d2a; /* Even darker red on click */
+    transform: scale(0.98); /* Slight scale effect on click */
+}
+
+#discard-all:focus {
+    outline: none; /* Remove focus outline */
+    box-shadow: 0 0 5px rgba(220, 53, 69, 0.5); /* Add a shadow for focus */
+}
+  
+#calendar {
+    padding: 20px; /* Add padding around the calendar */
+    border: 1px solid #ddd; /* Optional: Add a border around the calendar */
+    border-radius: 10px; /* Optional: Round the corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+#events-table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+#events-table th,
+#events-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+#events-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+td {
+    color: #fff;
+}
+
+.fc-col-header-cell {
+    color: #fff;
+}
+
+.fc-toolbar-title {
+    color: #fff;
+}
